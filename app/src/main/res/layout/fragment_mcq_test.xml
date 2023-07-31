@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/textColor2"
+    tools:context=".fragment.McqTestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMcqRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pageBg">
+
+        <View
+            android:id="@+id/mtBar1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/textColor1"
+            app:layout_constraintBottom_toTopOf="@+id/tvMTSubjectHead"
+            app:layout_constraintEnd_toEndOf="@+id/tvMTSubjectHead"
+            app:layout_constraintStart_toStartOf="@+id/tvMTSubjectHead" />
+
+        <TextView
+            android:id="@+id/tvMTSubjectHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Physics (Chapter 1)"
+            android:textAlignment="center"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rlMarkSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/slightly_rounded_rectangle_border_black"
+            android:padding="5dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvMTSubjectHead">
+            <TextView
+                android:id="@+id/totmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Total Marks : 50"
+                android:textColor="@color/textColor1" />
+            <TextView
+                android:id="@+id/tvPMHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="+ve Mark : "
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvPMHead"
+                android:text="0"
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvNMHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvNM"
+                android:text="-ve Mark : "
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvNM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textColor="@color/textColor1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTimeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/slightly_rounded_rectangle_border_black"
+            android:padding="5dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/rlMarkSection">
+
+            <TextView
+                android:id="@+id/tvTTHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Total Time : "
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTTHead"
+                android:text="00 Minutes"
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvTLHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvTL"
+                android:text="Time Left : "
+                android:textColor="@color/textColor1" />
+
+            <TextView
+                android:id="@+id/tvTL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="00:00"
+                android:textColor="@color/textColor1" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvQno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 1 "
+            android:textColor="@color/textColor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTimeSection" />
+
+        <TextView
+            android:id="@+id/tvQTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/slightly_rounded_rectangle_bg"
+            android:padding="8dp"
+            android:text="no question"
+            android:textColor="@color/textColor1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/rdgOptions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/webViewForImg"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ProgressBar
+            android:id="@+id/pbQimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/webViewForImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/webViewForImg" />
+
+        <com.mp.neetjeeiitprep.CustomWebView.ScrollSensitiveWebView
+            android:id="@+id/webViewForImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tvQTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQno"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:visibility="visible"/>
+
+        <!--<androidx.core.widget.NestedScrollView
+            android:id="@+id/svQimgSec"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tvQTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQno"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:visibility="visible">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgQ"
+                    android:layout_width="600dp"
+                    android:layout_height="400dp"
+                    android:adjustViewBounds="true"/>
+            </HorizontalScrollView>
+        </androidx.core.widget.NestedScrollView>-->
+
+        <RadioGroup
+            android:id="@+id/rdgOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/slightly_rounded_rectangle_bg"
+
+            app:layout_constraintBottom_toTopOf="@+id/tvExplain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQTitle"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <RadioButton
+                android:id="@+id/rdbOpt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="no option"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:textColor="@color/textColor1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rdbOpt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="no option"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:textColor="@color/textColor1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rdbOpt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="no option"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:textColor="@color/textColor1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rdbOpt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="no option"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:textColor="@color/textColor1"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvExplain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/slightly_rounded_rectangle_bg"
+            android:padding="8dp"
+            android:text="Explain :"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/btMTSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdgOptions"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btMTSubmit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/buttonBgGrey"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btnMcqSubmit"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnPrev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/textColor1"
+            app:strokeWidth="1dp" />
+
+
+        <View
+            android:id="@+id/mtBar2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/textColor1"
+            app:layout_constraintBottom_toTopOf="@+id/btnPrev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/mtBar3"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+
+            android:background="@color/textColor1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnNext"
+            app:layout_constraintTop_toBottomOf="@+id/btMTSubmit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrev"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="20dp"
+            android:text="PREV"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnNext"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:paddingEnd="20dp"
+            android:text="NEXT"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPrev"
+            app:layout_constraintTop_toTopOf="@+id/btnPrev" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swNightMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Night Mode  "
+            android:theme="@style/swcTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvQno" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

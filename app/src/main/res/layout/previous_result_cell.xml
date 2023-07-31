@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardResRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="18dp"
+    android:paddingBottom="10sp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#E1E2E4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Study Materialss(Physics -Chapter 1)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ResQAttemptedHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Question Attempted :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/resultHead"
+            app:layout_constraintTop_toBottomOf="@+id/resultHead" />
+
+        <TextView
+            android:id="@+id/resQAttempted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="62/250"
+            app:layout_constraintStart_toEndOf="@+id/ResQAttemptedHead"
+            app:layout_constraintTop_toTopOf="@+id/ResQAttemptedHead" />
+
+        <TextView
+            android:id="@+id/ResRightAnsHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Right Answer:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ResQAttemptedHead"
+            app:layout_constraintTop_toBottomOf="@+id/ResQAttemptedHead" />
+
+        <TextView
+            android:id="@+id/resRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="50"
+            app:layout_constraintStart_toEndOf="@+id/ResRightAnsHead"
+            app:layout_constraintTop_toTopOf="@+id/ResRightAnsHead" />
+
+        <TextView
+            android:id="@+id/ResMarksObtainedHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Marks Obtained:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ResRightAnsHead"
+            app:layout_constraintTop_toBottomOf="@+id/ResRightAnsHead" />
+
+        <TextView
+            android:id="@+id/ResMarksObtained"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="00"
+            app:layout_constraintStart_toEndOf="@+id/ResMarksObtainedHead"
+            app:layout_constraintTop_toTopOf="@+id/ResMarksObtainedHead" />
+
+
+        <TextView
+            android:id="@+id/ResAttemptDateHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Date:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ResMarksObtainedHead"
+            app:layout_constraintTop_toBottomOf="@+id/ResMarksObtainedHead" />
+
+        <TextView
+            android:id="@+id/ResAttemptDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="15-06-19"
+            app:layout_constraintStart_toEndOf="@+id/ResAttemptDateHead"
+            app:layout_constraintTop_toTopOf="@+id/ResAttemptDateHead" />
+
+        <com.github.guilhe.views.CircularProgressView
+            android:id="@+id/resCircularProgressView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:progress="25"
+            app:progressBarColor="@android:color/holo_purple"
+            app:progressBarThickness="10dp"
+            app:shadow="false"
+            app:startingAngle="270" />
+
+        <TextView
+            android:id="@+id/resProgressPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintBottom_toBottomOf="@+id/resCircularProgressView"
+            app:layout_constraintEnd_toEndOf="@+id/resCircularProgressView"
+            app:layout_constraintStart_toStartOf="@+id/resCircularProgressView"
+            app:layout_constraintTop_toTopOf="@+id/resCircularProgressView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

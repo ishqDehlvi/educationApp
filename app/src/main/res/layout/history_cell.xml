@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:paddingBottom="10sp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardHlRoot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#E1E2E4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/historyHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Study Materialss(Physics -Chapter 1)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hisQattemptedHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Question Attempted :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/historyHead"
+            app:layout_constraintTop_toBottomOf="@+id/historyHead" />
+
+        <TextView
+            android:id="@+id/hisQattempted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="62/250"
+            app:layout_constraintStart_toEndOf="@+id/hisQattemptedHead"
+            app:layout_constraintTop_toTopOf="@+id/hisQattemptedHead" />
+
+        <TextView
+            android:id="@+id/hisRightAnsHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Right Answer:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/hisQattemptedHead"
+            app:layout_constraintTop_toBottomOf="@+id/hisQattemptedHead" />
+
+        <TextView
+            android:id="@+id/hisRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="50"
+            app:layout_constraintStart_toEndOf="@+id/hisRightAnsHead"
+            app:layout_constraintTop_toTopOf="@+id/hisRightAnsHead" />
+
+        <TextView
+            android:id="@+id/hisAttemptDateHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Date:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/hisRightAnsHead"
+            app:layout_constraintTop_toBottomOf="@+id/hisRightAnsHead" />
+
+        <TextView
+            android:id="@+id/hisAttemptDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="15-06-19"
+            app:layout_constraintStart_toEndOf="@+id/hisAttemptDateHead"
+            app:layout_constraintTop_toTopOf="@+id/hisAttemptDateHead" />
+
+        <com.github.guilhe.views.CircularProgressView
+            android:id="@+id/circularProgressView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:progress="25"
+            app:progressBarColor="@android:color/holo_purple"
+            app:progressBarThickness="10dp"
+            app:shadow="false"
+            app:startingAngle="270" />
+
+        <TextView
+            android:id="@+id/hisProgressPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressView"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressView"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressView"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressView" />
+
+        <TextView
+            android:id="@+id/hisContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="tap to continue...."
+            android:textColor="@color/textColor1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/hisAttemptDateHead"
+            app:layout_constraintTop_toBottomOf="@+id/hisAttemptDateHead" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

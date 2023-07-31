@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnProfile"
+        android:icon="@drawable/ic_user"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/mnAboutUs"
+        android:icon="@drawable/ic_about_us"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/mnPPolicy"
+        android:icon="@drawable/ic_password"
+        android:title="Privacy Policy" />
+
+    <item
+        android:id="@+id/mnHistory"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
+
+    <item android:id="@+id/mnMockTest"
+        android:icon="@drawable/mn_mock_test"
+        android:title="Mock Test"/>
+
+    <item
+        android:id="@+id/mnHResults"
+        android:icon="@drawable/ic_result"
+        android:title="Results" />
+
+    <item android:id="@+id/mnStudentForum"
+        android:icon="@drawable/student_forum"
+        android:title="Student Forum"/>
+
+    <item
+        android:id="@+id/mnContactUs"
+        android:icon="@drawable/ic_mail"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/mnLogout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log out" />
+
+</menu>

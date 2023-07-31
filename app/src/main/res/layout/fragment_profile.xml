@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_with_logo"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".fragment.ProfileFragment">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="John Watson"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="John@xyz.com"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <ImageView
+        android:id="@+id/imgEnableEdit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <!--<ImageView
+        android:id="@+id/flLockView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdateProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/llRegContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdateProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        tools:layout_editor_absoluteX="20dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Name"
+            android:textColorHint="@color/textColor1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEpNa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:padding="10sp"
+                android:background="@drawable/layout_bg"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:text="John Watson"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/edt_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Address"
+            android:textColorHint="@color/textColor1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEpAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_home_address"
+                android:drawablePadding="10dp"
+                android:padding="10sp"
+                android:background="@drawable/layout_bg"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:text="221b backer street"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/edt_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Phone "
+            android:textColorHint="@color/textColor1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEpPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone_receiver"
+                android:drawablePadding="10dp"
+                android:hint="Phone "
+                android:padding="10sp"
+                android:background="@drawable/layout_bg"
+                android:inputType="number"
+                android:paddingBottom="15dp"
+                android:text="98745632145"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/edt_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Email "
+            android:textColorHint="@color/textColor1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:hint="Email "
+                android:padding="10sp"
+                android:background="@drawable/layout_bg"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:text="John@xyz.com"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/edt_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Password *"
+                android:textColorHint="@color/textColor1"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtRegPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/edt_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Re-type Password *"
+                android:textColorHint="@color/textColor1"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtRegConPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/edt_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPasswordChangeDialog"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint ="@color/buttonBgGrey"
+            android:text="Change Password"
+            android:textColor="@color/textColor1"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/textColor1"
+            app:strokeWidth="2dp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpdateProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdateProfile" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/buttonBgGrey"
+        android:text="Update"
+        android:textColor="@color/textColor1"
+        android:visibility="invisible"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

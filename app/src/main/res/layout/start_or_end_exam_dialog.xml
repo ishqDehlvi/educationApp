@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:background="@drawable/slightly_rounded_rectangle_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSgnPopUpHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Change Password"
+        android:text="Loading.."
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSgnMsg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Loading.."
+        tools:text="Some dialog"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelSign"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGotoSign"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="Yes"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.mp.neetjeeiitprep",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 315,
+      "versionName": "3.6",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

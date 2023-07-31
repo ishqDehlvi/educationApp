@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_with_logo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragment.PrivacyAndTermsFragment">
+
+        <View
+            android:id="@+id/resBar1"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/textColor1"
+            />
+
+
+        <TextView
+            android:id="@+id/tvPvAndTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:layout_margin="10dp"
+            android:justificationMode="inter_word"
+            android:padding="20dp"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium nunc sit amet lorem efficitur commodo. Aliquam egestas nisi quis dui vestibulum gravida. Nulla ultricies pulvinar eros, id dictum purus tincidunt ac. Curabitur vel metus et enim mattis luctus. Vivamus convallis sed velit vel pellentesque. Nullam a leo fringilla, semper ligula id, pharetra eros. Phasellus lobortis eget risus eu pretium. Donec sagittis augue eu leo bibendum ornare. Nulla maximus sagittis lacus, non varius ex suscipit id. Phasellus congue tincidunt est quis imperdiet. Aenean turpis ipsum, aliquam et pharetra nec, semper vitae massa. Etiam vitae mi mi. Mauris varius eu turpis non efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"
+            android:textAlignment="textStart"
+            android:textColor="@color/textColor1"
+            android:textSize="16sp" />
+
+        <!--<EditText
+            android:id="@+id/tvHash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+</ScrollView>

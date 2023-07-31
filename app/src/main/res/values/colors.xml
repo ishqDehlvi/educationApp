@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ccf2cb</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="pageBg">#ccf2cb</color>
+    <color name="textColor1">@color/colorAccent</color>
+    <color name="textColor2">#FAF9F9</color>
+    <color name="buttonBgBlue">#3132fe</color>
+    <color name="buttonBgRed">#ed1b24</color>
+    <color name="buttonBgGrey">#c2c5cc</color>
+    <color name="iconTint">#1f6bf9</color>
+
+    <color name="rightAnswerColor">#92D050</color>
+    <color name="wrongAnswerColor">#FF0000</color>
+
+    <color name="nightModeActiveTextColor">#FCFAFA</color>
+    <color name="nightModeDeActiveTextColor">#1F1E1E</color>
+    <color name="nightModeActiveBgColorDark">#181717</color>
+    <color name="nightModeActiveBgColorLight">#2E2D2D</color>
+
+    <color name="chartRightColor">#92D050</color>
+    <color name="chartWrongColor">#EB0707</color>
+    <color name="chartUnAttemptColor">#A28B8B</color>
+
+    <color name="theme_color">#2176FF</color>
+    <color name="theme_color_80">#CC2176FF</color>
+    <color name="theme_color_8">#142176FF</color>
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:background="@drawable/slightly_rounded_rectangle_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvRQno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Question 1 "
+        android:textColor="@color/textColor1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRQTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/slightly_rounded_rectangle_bg"
+        android:padding="8dp"
+        android:text="What is the meaning of this dummy question?"
+        android:textColor="@color/textColor1"
+        android:textSize="18sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svQimgSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RadioGroup
+        android:id="@+id/rdgROptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/slightly_rounded_rectangle_bg">
+
+        <RadioButton
+            android:id="@+id/rdbROpt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="RadioButton"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rdbROpt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="RadioButton"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rdbROpt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:text="RadioButton"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rdbROpt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:text="RadioButton"
+            android:textColor="@color/textColor1"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvRExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="italic"
+        android:background="@drawable/slightly_rounded_rectangle_bg"
+        android:padding="8dp"
+        android:text="Explanation :"
+        android:textColor="@color/textColor1"
+        android:textSize="14sp" />
+
+</LinearLayout>

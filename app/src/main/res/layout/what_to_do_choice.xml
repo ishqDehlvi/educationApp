@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/slightly_rounded_rectangle_bg"
+    android:orientation="vertical"
+    android:padding="13dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What do you want to do ?"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChooseNcrt"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:text="Open NCERT"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChooseSolvedPapers"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Open solved Material"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChoosePractice"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:text="Practice unsolved Questions"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChooseCancel"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor1" />
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pageBg"
+    tools:context=".fragment.ResultFragment">
+
+    <!--<TextView
+        android:id="@+id/tvResMainHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="IIBF Model Mock Test Result"
+        android:textColor="@color/textColor1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <View
+        android:id="@+id/resBar1"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="@color/textColor1"
+         />
+
+    <TextView
+        android:id="@+id/tvResSubjectHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="SUB - MUTUAL FUND – A # Level - 9"
+        android:textColor="@color/textColor1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--com.razerdp.widget.animatedpieview.AnimatedPieView-->
+    <!-- <View
+         android:id="@+id/animatedPieView"
+         android:layout_width="match_parent"
+         android:layout_height="400dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="16dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginBottom="8dp"
+         app:layout_constraintBottom_toTopOf="@+id/tvTotalAttemptHead"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/tvResSubjectHead" />
+
+     <TextView
+         android:id="@+id/tvTotalAttemptHead"
+         android:layout_width="138dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:layout_marginBottom="8dp"
+         android:text="Total Attempt  -"
+         android:textColor="@color/textColor1"
+         android:textSize="18sp"
+         app:layout_constraintBottom_toTopOf="@+id/tvUnAttemptHead"
+         app:layout_constraintStart_toStartOf="parent" />
+
+     <TextView
+         android:id="@+id/tvTotalAttempt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="00"
+         android:textColor="@color/textColor1"
+         android:textSize="18sp"
+         app:layout_constraintBottom_toBottomOf="@+id/tvTotalAttemptHead"
+         app:layout_constraintStart_toEndOf="@+id/tvTotalAttemptHead"
+         app:layout_constraintTop_toTopOf="@+id/tvTotalAttemptHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+
+     <View
+         android:id="@+id/vUnAttempt"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:background="@color/chartUnAttemptColor"
+         app:layout_constraintBottom_toBottomOf="@+id/tvUnAttemptHead"
+         app:layout_constraintStart_toStartOf="@+id/tvTotalAttemptHead"
+         app:layout_constraintTop_toTopOf="@+id/tvUnAttemptHead" />
+
+     <View
+         android:id="@+id/vRightAnswer"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:background="@color/chartRightColor"
+         app:layout_constraintBottom_toBottomOf="@+id/tvRightAnsHead"
+         app:layout_constraintStart_toStartOf="@+id/vUnAttempt"
+         app:layout_constraintTop_toTopOf="@+id/tvRightAnsHead" />
+
+     <View
+         android:id="@+id/vWrongAns"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:background="@color/chartWrongColor"
+         app:layout_constraintBottom_toBottomOf="@+id/tvWrongAnsHead"
+         app:layout_constraintStart_toStartOf="@+id/vRightAnswer"
+         app:layout_constraintTop_toTopOf="@+id/tvWrongAnsHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <TextView
+         android:id="@+id/tvUnAttemptHead"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:layout_marginBottom="8dp"
+         android:text="Un Attempt      -"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toTopOf="@+id/tvRightAnsHead"
+         app:layout_constraintStart_toEndOf="@+id/vUnAttempt" />
+
+     <TextView
+         android:id="@+id/tvUnAttempt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="00"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toBottomOf="@+id/tvUnAttemptHead"
+         app:layout_constraintStart_toEndOf="@+id/tvUnAttemptHead"
+         app:layout_constraintTop_toTopOf="@+id/tvUnAttemptHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <TextView
+         android:id="@+id/tvRightAnsHead"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:layout_marginBottom="8dp"
+         android:text="Right Answer   -"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toTopOf="@+id/tvWrongAnsHead"
+         app:layout_constraintStart_toEndOf="@+id/vRightAnswer" />
+
+     <TextView
+         android:id="@+id/tvRightAns"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="00"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toBottomOf="@+id/tvRightAnsHead"
+         app:layout_constraintStart_toEndOf="@+id/tvRightAnsHead"
+         app:layout_constraintTop_toTopOf="@+id/tvRightAnsHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <TextView
+         android:id="@+id/tvWrongAnsHead"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:layout_marginBottom="8dp"
+         android:text="Wrong Answer -"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toTopOf="@+id/rcvResultMcq"
+         app:layout_constraintStart_toEndOf="@+id/vWrongAns" />
+
+     <TextView
+         android:id="@+id/tvWrongAns"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="00"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toBottomOf="@+id/tvWrongAnsHead"
+         app:layout_constraintStart_toEndOf="@+id/tvWrongAnsHead"
+         app:layout_constraintTop_toTopOf="@+id/tvWrongAnsHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+
+
+     &lt;!&ndash;Right Side &ndash;&gt;
+
+     <TextView
+         android:id="@+id/tvTotalMarksHead"
+         android:layout_width="118dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:layout_marginEnd="8dp"
+         android:text="Total Marks   -"
+         android:textColor="@color/textColor1"
+         android:textSize="18sp"
+         app:layout_constraintEnd_toStartOf="@+id/tvTotalMarks"
+         app:layout_constraintTop_toBottomOf="@+id/animatedPieView" />
+
+     <TextView
+         android:id="@+id/tvTotalMarks"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="16dp"
+         android:text="0"
+         android:textColor="@color/textColor1"
+         android:textSize="18sp"
+         app:layout_constraintBottom_toBottomOf="@+id/tvTotalMarksHead"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/tvTotalMarksHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <View
+         android:id="@+id/vPercentage"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:layout_marginTop="8dp"
+         android:background="#A28B8B"
+         app:layout_constraintStart_toStartOf="@+id/tvTotalMarksHead"
+         app:layout_constraintTop_toBottomOf="@+id/tvTotalMarksHead" />
+
+     <TextView
+         android:id="@+id/tvPercentageHead"
+         android:layout_width="90dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="Percentage   -"
+         android:textColor="@color/textColor1"
+         app:layout_constraintStart_toEndOf="@+id/vPercentage"
+         app:layout_constraintTop_toTopOf="@+id/vPercentage" />
+
+     <TextView
+         android:id="@+id/tvPercentage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="00"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toBottomOf="@+id/tvPercentageHead"
+         app:layout_constraintStart_toEndOf="@+id/tvPercentageHead"
+         app:layout_constraintTop_toTopOf="@+id/tvPercentageHead"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <View
+         android:id="@+id/vRemarks"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:layout_marginTop="8dp"
+         android:background="#EB0707"
+         app:layout_constraintStart_toStartOf="@+id/vPercentage"
+         app:layout_constraintTop_toBottomOf="@+id/vPercentage" />
+
+     <TextView
+         android:id="@+id/tvRemarksHead"
+         android:layout_width="90dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="Remarks        -"
+         android:textColor="@color/textColor1"
+         app:layout_constraintStart_toEndOf="@+id/vRemarks"
+         app:layout_constraintTop_toTopOf="@+id/vRemarks" />
+
+     <TextView
+         android:id="@+id/tvRemarks"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:text="null"
+         android:textColor="@color/textColor1"
+         app:layout_constraintBottom_toBottomOf="@+id/tvRemarksHead"
+         app:layout_constraintStart_toEndOf="@+id/tvRemarksHead"
+         app:layout_constraintTop_toTopOf="@+id/tvRemarksHead"
+         app:layout_constraintVertical_bias="0.0" />
+ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvResultMcq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResSubjectHead" />
+</LinearLayout>

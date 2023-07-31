@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".fragment.LandingFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHLanding1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHLanding2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/colour_logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/landing_page_elements_gap"
+        android:text="Login Using"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardFb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardG"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="@dimen/landing_page_elements_gap"
+        android:backgroundTint="@color/buttonBgRed"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/btnStudentLogin"
+        app:layout_constraintStart_toEndOf="@+id/glHLanding2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_google_plus" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/textColor2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textColor="@color/textColor2"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFb"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/landing_page_elements_gap"
+        android:backgroundTint="@color/buttonBgBlue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/btnStudentLogin"
+        app:layout_constraintEnd_toStartOf="@+id/glHLanding2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_facebook_logo" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/textColor2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textColor="@color/textColor2"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStudentLogin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/landing_page_elements_gap"
+        android:backgroundTint="@color/buttonBgBlue"
+        android:text="Student Login"
+        android:textColor="@color/textColor2"
+        app:cornerRadius="50dp"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvOr"
+        app:layout_constraintEnd_toEndOf="@+id/cardG"
+        app:layout_constraintStart_toStartOf="@+id/cardFb" />
+
+    <View
+        android:id="@+id/orView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/glHLanding1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#3fff"
+        android:text="OR"
+        android:textColor="@color/textColor1"
+        app:layout_constraintBottom_toBottomOf="@+id/orView"
+        app:layout_constraintEnd_toEndOf="@+id/glHLanding2"
+        app:layout_constraintStart_toStartOf="@+id/glHLanding2"
+        app:layout_constraintTop_toTopOf="@+id/orView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuestLogin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/landing_page_elements_gap"
+        android:backgroundTint="@color/buttonBgBlue"
+        android:text="Guest Login"
+        android:textColor="@color/textColor2"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardG"
+        app:layout_constraintStart_toStartOf="@+id/cardFb"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(**instant but limited access in guest login)"
+        android:textColor="@color/textColor1"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuestLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnGuestLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuestLogin" />
+    <!--android:text="(** No need to sign in)"-->
+
+    <TextView
+        android:id="@+id/tvinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="**Practice Test will not be available if not sign in"
+        android:textColor="@color/textColor1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuestLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnGuestLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvinfo"
+        android:visibility="invisible"/>
+    <!--android:text="**Practice Test will not be available if not sign in"-->
+
+    <LinearLayout
+        android:id="@+id/llBottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvinfo2">
+
+
+        <TextView
+            android:id="@+id/tvinfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account"
+            android:textColor="@color/textColor1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:text="Sign Up"
+            android:textColor="@color/buttonBgRed"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvinfo3"
+            app:layout_constraintTop_toTopOf="@+id/tvinfo3" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

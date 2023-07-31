@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">NEETJEEIITPREP</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cmp_name_full">NEET JEE IIT PREPARATION</string>
+
+    <string name="sign_in_txt">Have an account? Sign In</string>
+    <string name="sign_up_txt">Don\'t Have an account? Sign Up</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="intro_motive">We believe that every student who dares to dream big and succeed in life should get education for free. In today’s era, when everyone is behind money and education system is in deep trouble due to some blood-sucking money machines ; we are trying to reverse the circumstances by providing essentials for NEET, JEE, IIT, AIIMS “ABSOLUTELY FREE”. Experience India’s largest free learning app; which makes your NEET JEE IIT dreams come true with 1000+ absolutely free NEET ,JEE (Mains and Advanced) and AIIMS mock tests ,study materials, practice questions ,suggestions and solved previous years question papers. NEETJEEIITPREP is #1 Preparation app for those who want to achieve success in life burden-free!</string>
+
+    <string name="copyrightText">© Edusphere Academy, All rights reserved.</string>
+
+    <string name="dash_page_head">Exam Preparation Materials</string>
+    <string name="study_page_head">Study Materials</string>
+    <string name="prev_page_head">Previous Years Question Papers</string>
+    <string name="test_page_head">Mock Test</string>
+    <string name="sug_page_head">Suggestion</string>
+    <string name="video_class_page_head">Video Class</string>
+
+    <string name="main_cat1_text">Study \nMaterials</string>
+    <string name="main_cat2_text">Previous Years\nQuestion Papers</string>
+    <string name="main_cat3_text">Practice \nTests</string>
+    <string name="main_cat4_text">Video \nClasses</string>
+    <string name="main_cat5_text">Mock Test\nLive</string>
+
+    <string name="study_mat_sub1">Physics</string>
+    <string name="study_mat_sub2">Chemistry</string>
+    <string name="study_mat_sub3">Biology</string>
+    <string name="study_mat_sub4">Mathematics</string>
+
+    <string name="sug_sub1">@string/study_mat_sub1</string>
+    <string name="sug_sub2">@string/study_mat_sub2</string>
+    <string name="sug_sub3">@string/study_mat_sub3</string>
+    <string name="sug_sub4">@string/study_mat_sub4</string>
+    <string name="sug_sub5">Complete\nSyllabus</string>
+
+    <string name="mockTest_live_sub1">Examination \nRoutine Schedule</string>
+    <string name="mockTest_live_sub2">CLASS 11th</string>
+    <string name="mockTest_live_sub3">CLASS 12th</string>
+
+    <string name="mockTest_nav_sub1">Top 10 \nStudents Profile</string>
+    <string name="mockTest_nav_sub2">My Profile</string>
+
+    <string name="prev_cat1">Neet / Aipmt</string>
+    <string name="prev_cat2">Jee Main</string>
+    <string name="prev_cat3">Aiims</string>
+    <string name="prev_cat4">Jee Advanced</string>
+
+    <string name="class11_cat1">@string/prev_cat1</string>
+    <string name="class11_cat2">@string/prev_cat2</string>
+    <string name="class11_cat3">Both</string>
+
+    <string name="btnMcqSubmit">Final Submit</string>
+    <string name="btnMcqSaveProgress">Save Progress</string>
+
+    <string name="chk_internet">Check Internet connection</string>
+    <string name="no_data_error">data not loaded yet</string>
+
+    <string name="facebook_app_id">252300876797907</string>
+    <!--    372427543444500-->
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">91745b5022a95baa8f85874400c0625d</string>
+
+
+    <!-- test -->
+
+    <!--<string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_resultpage_unitid">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!-- test end -->
+
+    <!-- Ad mob -->
+    <string name="admob_app_id">ca-app-pub-5709221063224134~4699780883</string>
+    <string name="admob_resultpage_unitid">ca-app-pub-5709221063224134/5406357892</string>
+
+    <!-- Ad mob End -->
+
+</resources>

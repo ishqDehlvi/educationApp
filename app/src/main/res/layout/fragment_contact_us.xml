@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_with_logo"
+        android:fillViewport="true"
+        tools:context=".fragment.ContactUsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10sp"
+            tools:context=".fragments.ContactUsFragment">
+
+            <!--<TextView
+                android:id="@+id/tvContactUsHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Contact us"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="25dp" />-->
+
+
+           <!-- <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gdlAboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />-->
+
+            <ScrollView
+                android:id="@+id/svContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvMainAddressHead"
+                        android:layout_width="match_parent"
+                        android:drawablePadding="10sp"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_location"
+                        android:text="Main Branch"
+                        android:textStyle="bold"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/nightModeActiveBgColorLight"
+                        android:textSize="19sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tvMainAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColor1"
+                        android:padding="10sp"
+                        android:layout_margin="6sp"
+                        android:background="@drawable/layout_bg"
+                        tools:text="102 S N Banjerjee Road , Sodepur Kolkata – 700110 West Bengal" />
+
+                    <TextView
+                        android:id="@+id/tvBusinessMailHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawablePadding="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Business Query"
+                        android:textAlignment="viewStart"
+                        android:drawableStart="@drawable/ic_contact_mail"
+                        android:textColor="@color/nightModeActiveBgColorLight"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tvBusinessMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6sp"
+                        android:padding="10sp"
+                        android:textColor="@color/textColor1"
+                        android:background="@drawable/layout_bg"
+                        tools:text="Support@xyz.co.in, business@neetjeeiitpro.co.in" />
+
+
+                    <TextView
+                        android:id="@+id/tvQueryMailHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:drawablePadding="10sp"
+                        android:text="Candidate Query"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_contact_mail"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/nightModeActiveBgColorLight"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tvQueryMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bg"
+                        android:padding="10sp"
+                        android:layout_margin="6sp"
+                        android:textColor="@color/textColor1"
+                        tools:text="Student.neetjeeiitprep@gmail.com, Support.iibf@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/tvWaUsHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawablePadding="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Whats app us"
+                        android:drawableStart="@drawable/ic_baseline_mobile"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/nightModeActiveBgColorLight"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tvWaUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bg"
+                        android:padding="10sp"
+                        android:textColor="@color/textColor1"
+                        android:layout_margin="6sp"
+                        tools:text="9748674057, 8697172252" />
+
+                    <TextView
+                        android:id="@+id/tvPhNoHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawablePadding="10sp"
+                        android:layout_marginTop="10sp"
+                        android:drawableStart="@drawable/ic_call"
+                        android:text="Contact No."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColor1"
+                        android:textSize="19sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPhNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bg"
+                        android:padding="10sp"
+                        android:textColor="@color/textColor1"
+                        android:layout_margin="6sp"
+                        tools:text="1800 – XXX  - 0076" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgFbIcon"
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:padding="5sp"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/imgLinkedInIcon"
+                    android:layout_width="55sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginRight="7sp"
+                    android:padding="3sp"
+                    android:src="@drawable/linkedin"/>
+
+                <ImageView
+                    android:id="@+id/imgTwitterIcon"
+                    android:layout_width="50sp"
+                    android:layout_height="70sp"
+                    android:padding="3sp"
+                    android:layout_marginRight="3sp"
+                    android:src="@drawable/twiiter"/>
+
+                <ImageView
+                    android:id="@+id/imgWhatsappIcon"
+                    android:layout_width="60sp"
+                    android:layout_height="70sp"
+                    android:padding="3sp"
+                    android:src="@drawable/www"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>

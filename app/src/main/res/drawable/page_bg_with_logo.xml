@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <solid android:color="@color/pageBg" />
+        </shape>
+
+    </item>
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:gravity="center" >
+        <bitmap android:src="@drawable/colour_logo"
+            android:alpha="0.1"/>
+    </item>
+</layer-list>

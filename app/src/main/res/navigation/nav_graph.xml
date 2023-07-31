@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.DashboardFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_studyMetFragment"
+            app:destination="@id/studyMetFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_prevYearQFragment"
+            app:destination="@id/prevYearQFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_practiceTestFragment"
+            app:destination="@id/practiceTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_suggestionFragment"
+            app:destination="@id/suggestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_privacyAndTermsFragment"
+            app:destination="@id/privacyAndTermsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action android:id="@+id/action_dashboardFragment_to_mockTestNavFragment"
+            app:destination="@+id/mockTestNavFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_landingActivity"
+            app:destination="@id/landingActivity"
+            app:popUpToInclusive="true" />
+        <action android:id="@+id/action_dashboardFragment_to_studentForumFragment"
+            app:destination="@+id/studentForumFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_resultListingFragment"
+            app:destination="@id/resultListingFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_videoClassesFragment"
+            app:destination="@id/videoClassesFragment" />
+
+        <action android:id="@+id/action_dashboardFragment_to_mockTestLiveFragment"
+            app:destination="@+id/mockTestLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyMetFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.StudyMetFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_study_met" >
+        <action
+            android:id="@+id/action_studyMetFragment_to_chapterListFragment"
+            app:destination="@id/chapterListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/prevYearQFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.PrevYearQFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_prev_year_q" >
+        <action
+            android:id="@+id/action_prevYearQFragment_to_previousYearsListFragment"
+            app:destination="@id/previousYearsListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/practiceTestFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.PracticeTestFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_practice_test" >
+        <action
+            android:id="@+id/action_practiceTestFragment_to_mockTestListFragment"
+            app:destination="@id/mockTestListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/suggestionFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.SuggestionFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_suggestion" />
+    <fragment
+        android:id="@+id/chapterListFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ChapterListFragment"
+        tools:layout="@layout/fragment_chapter_list" >
+        <action
+            android:id="@+id/action_chapterListFragment_to_mcqTestFragment"
+            app:destination="@id/mcqTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_chapterListFragment_to_pdfListingFragment"
+            app:destination="@id/pdfListingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mcqTestFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.McqTestFragment"
+        tools:layout="@layout/fragment_mcq_test" >
+        <action
+            android:id="@+id/action_mcqTestFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@+id/dashboardFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/previousYearsListFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.PreviousYearsListFragment"
+        tools:layout="@layout/fragment_previous_years_list" >
+        <action
+            android:id="@+id/action_previousYearsListFragment_to_mcqTestFragment"
+            app:destination="@id/mcqTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_previousYearsListFragment_to_pdfListingFragment"
+            app:destination="@id/pdfListingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mockTestListFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.MockTestListFragment"
+        tools:layout="@layout/fragment_mock_test_list">
+        <action
+            android:id="@+id/action_mockTestListFragment_to_mcqTestFragment"
+            app:destination="@id/mcqTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/solvedPapersFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.SolvedPapersFragment"
+        tools:layout="@layout/fragment_solved_papers" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/privacyAndTermsFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.PrivacyAndTermsFragment"
+        tools:layout="@layout/fragment_privacy_and_terms" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.HistoryFragment"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_mcqTestFragment"
+            app:destination="@id/mcqTestFragment" />
+    </fragment>
+    <fragment android:id="@+id/mockTestNavFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.MockTestNavFragment"
+        tools:layout="@layout/fragment_mock_test_nav">
+
+        <action android:id="@+id/action_mockTestNavFragment_to_top10StudentNavFragment"
+            app:destination="@+id/top10StudentNavFragment"/>
+
+    </fragment>
+    <fragment android:id="@+id/top10StudentNavFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.Top10StudentNavFragment"
+        tools:layout="@layout/fragment_top10_student_nav"/>
+    <activity
+        android:id="@+id/landingActivity"
+        android:name="com.mp.neetjeeiitprep.activity.LandingActivity"
+        android:label="activity_landing"
+        tools:layout="@layout/activity_landing" />
+    <fragment android:id="@+id/studentForumFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.StudentForumFragment"
+        tools:layout="@layout/fragment_student_forum">
+        <action android:id="@+id/action_studentForumFragment_to_studentForumChatsFragment"
+            app:destination="@+id/studentForumChatsFragment"/>
+        <action android:id="@+id/action_studentForumFragment_to_studentForumPostsFragment"
+            app:destination="@+id/studentForumPostsFragment"/>
+
+    </fragment>
+    <fragment android:id="@+id/studentForumChatsFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.StudentForumChatsFragment"
+        tools:layout="@layout/fragment_student_forum_chats"/>
+    <fragment android:id="@+id/studentForumPostsFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.StudentForumPostsFragment"
+        tools:layout="@layout/fragment_student_forum_posts"/>
+
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ResultFragment"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/resultListingFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ResultListingFragment" />
+    <fragment
+        android:id="@+id/pdfListingFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.PdfListingFragment"
+        tools:layout="@layout/fragment_pdf_listing">
+        <action
+            android:id="@+id/action_pdfListingFragment_to_solvedPapersFragment"
+            app:destination="@id/solvedPapersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoClassesFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.VideoClassesFragment"
+        tools:layout="@layout/fragment_study_met">
+        <action
+            android:id="@+id/action_videoClassesFragment_to_videoChapterListFragment"
+            app:destination="@id/videoChapterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoChapterListFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.VideoChapterListFragment"
+        tools:layout="@layout/fragment_video_chapter_list" >
+        <action
+            android:id="@+id/action_videoChapterListFragment_to_videoListFragment"
+            app:destination="@id/videoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoListFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.VideoListFragment"
+        tools:layout="@layout/fragment_video_listing">
+        <action
+            android:id="@+id/action_videoListFragment_to_videoPlayer"
+            app:destination="@id/videoPlayer" />
+    </fragment>
+    <activity
+        android:id="@+id/videoPlayer"
+        android:name="com.mp.neetjeeiitprep.activity.VideoPlayerActivity"
+        tools:layout="@layout/activity_video_player"/>
+
+    <fragment android:id="@+id/mockTestLiveFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.MockTestLiveFragment"
+        android:label="  "
+        tools:layout="@layout/fragment_mock_test_live">
+        <action android:id="@+id/action_mockTestLiveFragment_to_examroutine_mockTestLiveFragment"
+            app:destination="@+id/examroutine_mockTestLiveFragment"/>
+        <action android:id="@+id/action_mockTestLiveFragment_to_class11_12mockTestLiveFragment"
+            app:destination="@id/class11_12mockTestLiveFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/examroutine_mockTestLiveFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.ExamroutineMocktestlive"
+        tools:layout="@layout/fragment_examroutine_mocktestlive">
+
+    </fragment>
+    <fragment android:id="@+id/class11_12mockTestLiveFragment"
+        android:name="com.mp.neetjeeiitprep.fragment.Class11_12mockTestLiveFragment"
+        tools:layout="@layout/fragment_class11_12mocktestlive">
+
+        <action android:id="@+id/action_class11_12mockTestLiveFragment_to_mcqTestFragment"
+            app:destination="@+id/mcqTestFragment"/>
+
+<!--        <action android:id="@+id/action_class11_12mockTestLiveFragment_to_neet_mockTestLiveFragment"-->
+<!--            app:destination="@+id/neet_mockTestLiveFragment"/>-->
+
+<!--        <action android:id="@+id/action_class11_12mockTestLiveFragment_to_jee_mockTestLiveFragment"-->
+<!--            app:destination="@+id/jee_mockTestLiveFragment"/>-->
+
+<!--        <action android:id="@+id/action_class11_12mockTestLiveFragment_to_both_mockTestLiveFragment"-->
+<!--            app:destination="@+id/both_mockTestLiveFragment"/>-->
+
+    </fragment>
+
+<!--    <fragment android:id="@+id/neet_mockTestLiveFragment"-->
+<!--        android:name="com.mp.neetjeeiitprep.fragment.Neet_mockTestLive"-->
+<!--        tools:layout="@layout/fragment_neet_mock_test_live"/>-->
+<!--    <fragment android:id="@+id/jee_mockTestLiveFragment"-->
+<!--        android:name="com.mp.neetjeeiitprep.fragment.Jee_MockTestLive"-->
+<!--        tools:layout="@layout/fragment_jee__mock_test_live"/>-->
+<!--    <fragment android:id="@+id/both_mockTestLiveFragment"-->
+<!--        android:name="com.mp.neetjeeiitprep.fragment.Both_mockTestLive"-->
+<!--        tools:layout="@layout/fragment_both_mock_test_live"/>-->
+</navigation>

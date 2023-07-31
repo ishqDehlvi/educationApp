@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "941623854657",
+    "firebase_url": "https://neetjeeiitprep-1565071896340.firebaseio.com",
+    "project_id": "neetjeeiitprep-1565071896340",
+    "storage_bucket": "neetjeeiitprep-1565071896340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941623854657:android:6f733ff007fbaa7485a8c0",
+        "android_client_info": {
+          "package_name": "com.mp.neetjeeiitprep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941623854657-8q0bciu1aca3q5qenh1mcugfjnpcmgkm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mp.neetjeeiitprep",
+            "certificate_hash": "a748d7c6cc67bae0814fbea9eaf7e695d771cebc"
+          }
+        },
+        {
+          "client_id": "941623854657-nfj8dpt0t34u0fo5mltjre66hp97jk50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mp.neetjeeiitprep",
+            "certificate_hash": "02388c31b7b4a1a7ba077de650898b6c6069232f"
+          }
+        },
+        {
+          "client_id": "941623854657-e7ousqhk8ic5nfiie2ebalnej4n7e62k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKwsUY2Q6tFnv8500hAiEhTuXwK2SNVIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941623854657-4sibvhl5rmc5em9qihicu2914q3b78rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
